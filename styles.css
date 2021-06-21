@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg: #1F806A;
+    --button-bg: #ebebeb;
+    --alert-red: #EB4748;
+    --font-fam: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --hidden: hidden;
+    --top: -100%;
+}
+
+.root {
+    font-family: var(--font-fam);
+    background-color: var(--main-bg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+button {
+    background-color: var(--button-bg);
+    border: none;
+    padding: 1.5vmin;
+    margin: 1vmin;
+    cursor: pointer;
+}
+
+.card {
+    background-color: white;
+    padding: 4vmin;
+    box-shadow: 0 0 2vmin gray;
+    border-radius: 0.75vmin;
+}
+
+#toast {
+    position: absolute;
+    top: var(--top);
+    padding: 2vmin;
+    color: white;
+    width: 12%;
+    text-align: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+    cursor: pointer;
+}
+
+.message-toast {
+    background-color: black;
+}
+
+.alert-toast {
+    background-color: var(--alert-red);
+}
